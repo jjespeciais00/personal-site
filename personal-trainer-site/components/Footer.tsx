@@ -1,3 +1,5 @@
+"use client";
+
 import { Instagram, Youtube, MapPin, Phone } from "lucide-react";
 
 const WHATSAPP_NUMBER = "5511999999999";
