@@ -5,10 +5,11 @@
 @tailwind utilities;
 
 :root {
-  --black: #0D0D0D;
-  --gray-dark: #1A1A1A;
-  --red: #E50914;
-  --red-hover: #B20710;
+  --black: #040405;
+  --gray-dark: #121214;
+  --gold: #FFD700;
+  --neon: #00e6a1;
+  --electric: #00bfff;
   --white: #FFFFFF;
 }
 
@@ -91,7 +92,7 @@ body {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #E50914, #ff4444);
+  background: linear-gradient(135deg, var(--gold), var(--neon), var(--electric));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -164,6 +165,20 @@ body {
   text-transform: uppercase;
   padding: 4px 12px;
   border-radius: 2px;
+}
+
+.badge-gold {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--gold), var(--electric));
+  color: #080808;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 999px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.45);
 }
 
 /* Input styles */

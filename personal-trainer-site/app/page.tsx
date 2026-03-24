@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import HeroSection from "@/sections/HeroSection";
 import ResultsSection from "@/sections/ResultsSection";
+import PricingFaqSection from "@/sections/PricingFaqSection";
 import ServicesSection from "@/sections/ServicesSection";
 import MethodSection from "@/sections/MethodSection";
 import AboutSection from "@/sections/AboutSection";
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <ResultsSection />
+      <PricingFaqSection />
       <ServicesSection />
       <MethodSection />
       <AboutSection />
