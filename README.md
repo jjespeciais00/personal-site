@@ -1,91 +1,67 @@
-💪 Personal Trainer Site — Next.js 14
-Site profissional one-page para Personal Trainer, construído com Next.js 14, React, TailwindCSS e TypeScript. Pronto para produção e fácil de personalizar.
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=E50914&height=200&section=header&text=Personal%20Trainer%20Site&fontSize=50&fontColor=ffffff&desc=Landing%20Page%20Premium%20para%20Profissionais&descAlign=50&descAlignY=55" alt="Personal Trainer Site Banner">
+</div>
 
+<h3 align="center">Template moderno e escalável construído com Next.js 14, otimizado para alta conversão.</h3>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js%2014-000000?style=for-the-badge&logo=next.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/React%2018-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+</p>
 
-✨ Seções
-Seção	Descrição
-Hero	Foto, título impactante, stats animados (alunos, dias, avaliação)
-Resultados	Grid antes/depois + 4 depoimentos com avatar
-Serviços	3 cards de planos (Online, Presencial, Avaliação Física)
-Método	3 passos visuais com ícones e tags
-Sobre	Foto, bio, certificações, stats
-Contato	Formulário com estado de sucesso + botão WhatsApp
-WhatsApp Float	Botão flutuante com pulse animation
-🎨 Identidade Visual
-Preto principal  →  #0D0D0D
-Cinza escuro     →  #1A1A1A
-Vermelho destaque →  #E50914
-Vermelho hover   →  #B20710
-Branco           →  #FFFFFF
-Fontes: Bebas Neue (display) + DM Sans (body) + JetBrains Mono (mono)
+## 📌 Sobre o Projeto
 
-🚀 Como rodar
-1. Clonar e instalar
-git clone https://github.com/SEU_USUARIO/personal-trainer-site.git
-cd personal-trainer-site
-npm install
-2. Rodar em desenvolvimento
-npm run dev
-Acesse: http://localhost:3000
+Uma *One-Page Landing Page* de alto nível voltada para Personal Trainers e profissionais de saúde/fitness. O projeto foi arquitetado com um visual Dark Mode marcante e construído sobre o novo **App Router** do Next.js 14. 
 
-3. Build para produção
-npm run build
-npm run start
-🛠️ Estrutura do projeto
-personal-trainer-site/
-├── app/
-│   ├── globals.css       # Estilos globais, variáveis CSS, animações
-│   ├── layout.tsx        # Layout raiz com metadata SEO
-│   └── page.tsx          # Página principal — importa todas as seções
-├── components/
-│   ├── Navbar.tsx        # Navbar fixa com scroll behavior
-│   ├── Footer.tsx        # Rodapé com links e contato
-│   ├── WhatsAppFloat.tsx # Botão flutuante WhatsApp
-│   └── ScrollReveal.tsx  # HOC para animação de entrada no scroll
-├── sections/
-│   ├── HeroSection.tsx       # Hero com stats animados e foto
-│   ├── ResultsSection.tsx    # Antes/depois + depoimentos
-│   ├── ServicesSection.tsx   # Cards de planos/preços
-│   ├── MethodSection.tsx     # 3 passos do método
-│   ├── AboutSection.tsx      # Bio + certificações
-│   └── ContactSection.tsx    # Formulário + integração WhatsApp
-├── tailwind.config.ts    # Cores, fontes e animações customizadas
-├── next.config.js        # Configuração de imagens remotas
-└── tsconfig.json
-✏️ Como personalizar
-Trocar o Personal Trainer
-Nome e logo → components/Navbar.tsx e components/Footer.tsx
-Número do WhatsApp → Buscar 5511999999999 e substituir em todos os arquivos
-Foto Hero → sections/HeroSection.tsx — trocar a URL da imagem
-Foto Sobre → sections/AboutSection.tsx — trocar a URL da imagem
-Preços → sections/ServicesSection.tsx — array plans
-Certificações → sections/AboutSection.tsx — array certifications
-Depoimentos → sections/ResultsSection.tsx — array testimonials
-Resultados antes/depois → sections/ResultsSection.tsx — array transformations
-Trocar cores
-Edite as variáveis em app/globals.css:
+Perfeito para destacar serviços presenciais e online, exibir transformações reais de alunos e captar novos contatos via formulário interativo e WhatsApp.
 
+## ✨ Principais Seções
+
+- **Hero:** Seção impactante com botão de CTA (Call to Action) e contadores estatísticos animados.
+- **Resultados:** Grid interativo de fotos (Antes/Depois) e depoimentos reais em formato de cards.
+- **Serviços:** Três opções claras de planos customizáveis (ex: Online, Presencial, Avaliação Física).
+- **Método:** Demonstração visual com ícones dos passos do acompanhamento do aluno.
+- **Sobre Mim & Certificações:** Destaque do profissional e sua expertise.
+- **Contato Dinâmico:** Integração ágil e sutil com WhatsApp (Botão Flutuante Pulsante).
+
+## 🚀 Como Executar Localmente
+
+Siga os passos abaixo para rodar e personalizar o template de acordo com sua necessidade:
+
+```bash
+# Clone o repositório
+$ git clone https://github.com/jjespeciais00/personal-site.git
+
+# Acesse a pasta do projeto interno
+$ cd personal-site/personal-trainer-site
+
+# Instale as dependências
+$ npm install
+
+# Inicialize o servidor de desenvolvimento
+$ npm run dev
+```
+
+Acesse a aplicação no navegador em `http://localhost:3000`.
+
+## 🎨 Identidade Visual e Customização
+
+A arquitetura foi pensada para ser *white-label* e amplamente adaptável. Na raiz do projeto, modifique facilmente a paleta principal em `app/globals.css`:
+
+```css
 :root {
-  --red: #E50914;       /* cor de destaque */
+  --red: #E50914;       /* Destaque principal */
   --red-hover: #B20710;
   --black: #0D0D0D;
   --gray-dark: #1A1A1A;
 }
-📦 Deploy recomendado
-Vercel (gratuito, recomendado)
-npm i -g vercel
-vercel
-Ou conecte o repositório diretamente em vercel.com.
+```
 
-📋 Tecnologias
-Next.js 14 — App Router
-React 18
-TailwindCSS 3
-TypeScript
-Lucide React — ícones
-Google Fonts — Bebas Neue + DM Sans
-📄 Licença
-MIT — livre para uso comercial e adaptações.
+Altere dados de contato, depoimentos e conteúdos nas seções individuais dentro do pacote `sections/` e `components/`.
 
-Desenvolvido como template reutilizável para Personal Trainers 💪
+---
+<div align="center">
+  Desenvolvido com 💪 por <a href="https://github.com/jjespeciais00">João Especiais</a>
+</div>
