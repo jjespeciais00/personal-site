@@ -11,13 +11,13 @@
   <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 </p>
 
-## 📌 Sobre o Projeto
+## Sobre o Projeto
 
 Uma *One-Page Landing Page* de alto nível voltada para Personal Trainers e profissionais de saúde/fitness. O projeto foi arquitetado com um visual Dark Mode marcante e construído sobre o novo **App Router** do Next.js 14. 
 
 Perfeito para destacar serviços presenciais e online, exibir transformações reais de alunos e captar novos contatos via formulário interativo e WhatsApp.
 
-## ✨ Principais Seções
+## Principais Seções
 
 - **Hero:** Seção impactante com botão de CTA (Call to Action) e contadores estatísticos animados.
 - **Resultados:** Grid interativo de fotos (Antes/Depois) e depoimentos reais em formato de cards.
@@ -26,7 +26,7 @@ Perfeito para destacar serviços presenciais e online, exibir transformações r
 - **Sobre Mim & Certificações:** Destaque do profissional e sua expertise.
 - **Contato Dinâmico:** Integração ágil e sutil com WhatsApp (Botão Flutuante Pulsante).
 
-## 🚀 Como Executar Localmente
+## Como Executar Localmente
 
 Siga os passos abaixo para rodar e personalizar o template de acordo com sua necessidade:
 
@@ -46,7 +46,7 @@ $ npm run dev
 
 Acesse a aplicação no navegador em `http://localhost:3000`.
 
-## 🎨 Identidade Visual e Customização
+## Identidade Visual e Customização
 
 A arquitetura foi pensada para ser *white-label* e amplamente adaptável. Na raiz do projeto, modifique facilmente a paleta principal em `app/globals.css`:
 
@@ -63,5 +63,5 @@ Altere dados de contato, depoimentos e conteúdos nas seções individuais dentr
 
 ---
 <div align="center">
-  Desenvolvido com 💪 por <a href="https://github.com/jjespeciais00">João Especiais</a>
+  Desenvolvido por <a href="https://github.com/jjespeciais00">João Dias</a>
 </div>
